@@ -8,7 +8,7 @@ const Home: NextPage = (props) => {
   return (
     <div>
 
-      <Link href="/about">About</Link>
+      <Link href="/about">{t('menu:about')}</Link>
       <h1>
         {t('home:welcome_message')}
       </h1>
@@ -21,7 +21,7 @@ export default Home
 export async function getStaticProps({locale}: {locale:any}) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home']))
+      ...(await serverSideTranslations(locale, ['home', 'menu']))
     }
   }
 }
