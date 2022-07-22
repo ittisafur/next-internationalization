@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   const router = useRouter();
 
   const intro = router.locale === 'en-US' ? 
-    `Hi, I'm a web developer based in Dhaka, Bangladesh. Click on About to get to know about me.` :
+    "Hi, I'm a web developer based in Dhaka, Bangladesh. Click on About to get to know about me." :
     router.locale === 'fr' ?
     "Bonjour, je suis un développeur web basé en Dhaka, Bangladesh. Cliquez sur À propos pour en savoir plus sur moi." : "";
 
